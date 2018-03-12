@@ -261,7 +261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c21a0d4b762c6e841975ea70de002d4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initMode: 1
+  initMode: 0
   constraints:
     control: 1
     move: 1
@@ -312,7 +312,7 @@ MonoBehaviour:
       stepTime: 0.3
       sounds: {fileID: 11400000, guid: e50c2617fb106c241b54562cfef1cb0b, type: 2}
       headbob: {fileID: 11400000, guid: a7a2dfcb6efe77849b6e3d15a7010400, type: 2}
-      input: 1
+      input: 0
     crouch:
       height: 1
       radius: 0.35

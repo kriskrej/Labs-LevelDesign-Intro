@@ -7,4 +7,9 @@ public class RespawnOnCollision : MonoBehaviour {
         if (other.gameObject.tag == "Player")
             SpawnPoint.ResetPlayerPosition();
     }
+
+    void OnCollisionEnter(Collision other) {
+        if (other.gameObject.tag == "Player")
+            SpawnPoint.ResetPlayerPosition();
+    }
 }
