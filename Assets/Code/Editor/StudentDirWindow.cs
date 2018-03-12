@@ -32,6 +32,6 @@ public class StudentDirWindow : EditorWindow {
     }
 
     string GetStudentDirName() {
-        return index + "-" + name + "_" + surname;
+        return "praca-" + index + "-" + name + "_" + surname;
     }
 }
