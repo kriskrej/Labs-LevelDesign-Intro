@@ -18,7 +18,7 @@ public class StudentDirWindow : EditorWindow {
         index = ValidateString(EditorGUILayout.TextField("Nr indeksu", index));
         if (GUILayout.Button("Stwórz pusty katalog")) {
             System.IO.Directory.CreateDirectory(GetStudendDirPath());
-            FileUtil.CopyFileOrDirectory(Application.dataPath+"/Standard Assets/Original scenes", GetStudendDirPath()+"/Scenes");
+            FileUtil.CopyFileOrDirectory(Application.dataPath + "/Standard Assets/Original scenes", GetStudendDirPath() + "/Scenes");
             AssetDatabase.Refresh();
         }
     }
@@ -28,6 +28,7 @@ public class StudentDirWindow : EditorWindow {
     }
 
     string ValidateString(string text) {
+        if (text == null) return "";
         text = Regex.Replace(text, "[^\\w\\._]", "");
         return text;
     }
