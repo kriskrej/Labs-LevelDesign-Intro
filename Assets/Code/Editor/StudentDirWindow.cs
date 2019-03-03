@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StudentDirWindow : EditorWindow {
 
-    [MenuItem("WSEI/Katalog studenta")]
+    [MenuItem("Studenci/Katalog studenta")]
     public static void ShowWindow() {
         EditorWindow.GetWindow(typeof(StudentDirWindow));
     }
@@ -20,6 +20,7 @@ public class StudentDirWindow : EditorWindow {
             System.IO.Directory.CreateDirectory(GetStudendDirPath());
             FileUtil.CopyFileOrDirectory(Application.dataPath + "/Standard Assets/Original scenes", GetStudendDirPath() + "/Scenes");
             AssetDatabase.Refresh();
+            this.Close();
         }
     }
 
