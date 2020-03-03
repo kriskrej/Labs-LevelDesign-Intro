@@ -16,9 +16,9 @@ public class StudentDirWindow : EditorWindow {
         name = ValidateString(EditorGUILayout.TextField("Imię", name));
         surname = ValidateString(EditorGUILayout.TextField("Nazwisko", surname));
         index = ValidateString(EditorGUILayout.TextField("Nr indeksu", index));
-        if (GUILayout.Button("Stwórz pusty katalog")) {
+        if (GUILayout.Button("Stwórz katalog z kopią scen")) {
             System.IO.Directory.CreateDirectory(GetStudendDirPath());
-            FileUtil.CopyFileOrDirectory(Application.dataPath + "/Standard Assets/Original scenes", GetStudendDirPath() + "/Scenes");
+            FileUtil.CopyFileOrDirectory(Application.dataPath + "/Scenes", GetStudendDirPath() + "/Scenes");
             AssetDatabase.Refresh();
             this.Close();
         }

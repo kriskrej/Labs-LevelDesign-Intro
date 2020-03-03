@@ -6,6 +6,7 @@ log-*
 ~$*.xls*
 ~$*.ppt*
 *.xlk
+/.idea
 
 # Windows image file caches
 Thumbs.db
