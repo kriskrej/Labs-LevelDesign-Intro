@@ -9,11 +9,11 @@ public class StudentDirWindow : EditorWindow {
         EditorWindow.GetWindow(typeof(StudentDirWindow));
     }
 
-    string name, surname, index;
+    string firstName, surname, index;
 
     void OnGUI() {
         GUILayout.Label("Mój folder", EditorStyles.boldLabel);
-        name = ValidateString(EditorGUILayout.TextField("Imię", name));
+        firstName = ValidateString(EditorGUILayout.TextField("Imię", firstName));
         surname = ValidateString(EditorGUILayout.TextField("Nazwisko", surname));
         index = ValidateString(EditorGUILayout.TextField("Nr indeksu", index));
         if (GUILayout.Button("Stwórz katalog z kopią scen")) {
@@ -35,6 +35,6 @@ public class StudentDirWindow : EditorWindow {
     }
 
     string GetStudentDirName() {
-        return "praca-" + index + "-" + name + "_" + surname;
+        return "praca-" + index + "-" + firstName + "_" + surname;
     }
 }

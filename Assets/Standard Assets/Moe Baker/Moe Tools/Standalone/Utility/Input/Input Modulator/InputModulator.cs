@@ -65,7 +65,6 @@ namespace Moe.Tools
             platforms = new DeployablePlatform[]
             {
             new DeployablePlatform("PC", new RuntimePlatform[] { RuntimePlatform.WindowsEditor, RuntimePlatform.WindowsPlayer, RuntimePlatform.OSXEditor, RuntimePlatform.OSXPlayer, RuntimePlatform.LinuxEditor, RuntimePlatform.LinuxPlayer }),
-            new DeployablePlatform("Mobile", new RuntimePlatform[] { RuntimePlatform.Android, RuntimePlatform.IPhonePlayer, RuntimePlatform.TizenPlayer }),
             new DeployablePlatform("XBOX", new RuntimePlatform[] { RuntimePlatform.XboxOne }),
             new DeployablePlatform("PS4", new RuntimePlatform[] { RuntimePlatform.PS4 })
             };
